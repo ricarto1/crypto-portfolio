@@ -1,6 +1,4 @@
-html {
-    background: green;
-}
+
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -54,3 +52,14 @@ html {
   #root, #__next {
     isolation: isolate;
   }
+
+  .root{
+    --color-primary:#217bf4;
+    --color-secondary: #ffaf2e;
+    --color-text: #0a093d; 
+  }
+
+  body {
+    color:var(--color-text);
+    font-family: 'Inter', sans-serif;
+}
