@@ -13,21 +13,25 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__nav">
-            <img src="./Images/logo.svg" alt="logo for company netbook split diagonal with orange and yellow section and a line with a dot in the end" />
-            <nav>
+        <img src="./Images/logo.svg" alt="logo for company netbook split diagonal with orange and yellow section and a line with a dot in the end" 
+        width = "145"
+        height = "35"
+        />
+            <nav class="header__nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Home</a></li>
                     <li><a href="">Community</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Events</a></li>
                 </ul>
             </nav>
-        </div>
        
-        <div>
-            <input type="search" />
-            <a href="/login">Log in </a>
+        <div class="header__actions">
+            <form class="header__search" action="">
+                <img src="./Images/icn-search.svg" alt="magnify glass icon search" width="16" height="16">
+                <input type="search" aria-label="search" placeholder="Search Here..."/>
+            </form>
+            <a href="/login" class="btn">Log in </a>
         </div>
         
     </header>
