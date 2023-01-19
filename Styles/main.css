@@ -91,6 +91,11 @@ a{
   border-radius: 16px;
 }
 
+
+.btn svg{
+  margin-left: 16px;
+}
+
 .btn__secondary{
 
   background-color: transparent;
@@ -101,6 +106,19 @@ a{
 .btn--large{
   height: 64px;
   padding: 0 48px;
+}
+
+h2.section__title{
+  font-size: 18px;
+  color:var(--color-primary);
+}
+
+p.section__subtitle{
+  color:var(--color-heading);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.33;
+  margin-bottom: 16px;
 }
 
 .container{
@@ -194,17 +212,6 @@ a{
   margin: 96px auto; 
 }
 
-.whats-netbooks__content h2{
-  font-size: 18px;
-  color:var(--color-primary);
-}
-
-.whats-netbooks__content h3{
-  font-size: 36px;
-  line-height: 1.33;
-  margin-bottom: 16px;
-}
-
 .whats-netbooks__content p{
   margin-bottom: 32px;
 }
@@ -257,6 +264,7 @@ a{
   display: grid;
   grid-template-columns: 340px 340px 1fr;
   gap: 24px;
+  align-items: center;
 }
 
 .achievement .card {
@@ -298,6 +306,15 @@ a{
 }
 
 .achievement .card__content{
+  margin-bottom: 32px;
+}
+
+.achievement__content{
+  margin-inline-start: auto;
+  width: 380px;
+}
+
+.achievement__content p:not(.section__subtitle){
   margin-bottom: 32px;
 }
 
