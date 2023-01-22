@@ -295,6 +295,7 @@ align-items: center;
   grid-template-columns: 340px 340px 1fr;
   gap: 24px;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .achievement .card {
@@ -350,7 +351,8 @@ align-items: center;
 
 .community{
   background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
-
+  padding: 80px 0;
+  margin-bottom: 120px;
 }
 
 .community__items{
@@ -358,6 +360,13 @@ align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 40px;
 }
+
+.community__content{
+  text-align: center;
+  width: 448px;
+  margin: 0 auto 64px;
+}
+
 
 .community__card{
   padding: 40px 64px 40px 40px;
@@ -369,9 +378,6 @@ align-items: center;
   gap:24px;
 }
 
-.community__card-content{
-
-}
 
 .community__card-icon{
   display: flex;
@@ -382,6 +388,7 @@ align-items: center;
   aspect-ratio: 1/1;
   border-radius: 24px;
 }
+
 
 .community__members .community__card-icon {
   background: linear-gradient(154.49deg, #5CA1FE 6.61%, #217BF4 89.72%);
@@ -413,3 +420,80 @@ box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
   box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
 }
 
+.team__content {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__tabs {
+  background-color: var(--color-primary-10);
+  width: 450px;
+  margin: 40px auto;
+  display: flex;
+  border-radius: 16px;
+  padding: 8px ;
+}
+
+.team__tab {
+  height: 56px;
+  display: inline-flex;
+  padding: 0 32px;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  background-color: transparent;
+  flex-grow: 1;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.team__tab:hover{
+  color: var(--color-primary);
+}
+
+.team__tab--active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.team__members{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.team__member-card{
+text-align: center;
+border: solid 1px #f3f3f3;
+border-radius: 16px;
+transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+padding: 32px;
+}
+
+.team__member-card:hover {
+  box-shadow: 0px 26px 49px  rgba(146,165,184,0.24);
+  transform: translate(-4px, -4px);
+}
+
+.team__member-picture{
+  border-radius: 50%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.team__member-avatar{
+  display: inline-block;
+  position: relative;
+}
+
+.team__member-name{
+font-size: 24px;
+
+}
+
+.team__member-username{
+font-size: 16px;
+}
