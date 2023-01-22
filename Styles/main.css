@@ -497,3 +497,65 @@ font-size: 24px;
 .team__member-username{
 font-size: 16px;
 }
+
+.app{
+  background-color: #e5f0fd;
+ overflow: hidden;
+  
+}
+
+.app .container{
+  display: grid;
+  grid-template-columns:350px 1fr;
+  height: 560px;
+  align-items: center;
+}
+
+.app__screenshot{
+  position: relative;
+  align-self: end;
+  width: 341px;
+  margin-inline-start: auto;
+}
+
+.app__screenshot, .app__screenshot-picture{
+  filter: drop-shadow(0px 80px 250px rgba(0, 0, 0, 0.2));
+  position: relative;
+  z-index: 1;
+}
+
+.app__screenshot-circle-1, .app__screenshot-circle-2 {
+width: 145px;
+height: 145px;
+border-radius: 50%;
+position: absolute;
+left: -46px;
+}
+
+.app__screenshot-shine{
+  position: absolute;
+  right: -57px;
+  top: -54px;
+}
+
+.app__screenshot-circle-1{
+  background-color: #FC6A65;
+  bottom: 72px;
+}
+
+.app__screenshot-circle-2{
+  background-color: #489D92;
+  bottom: -72px;
+}
+
+.app__button{
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.app__button img{
+  border-radius: 8px;
+  box-shadow: 0px 0px 22px rgba(178, 188, 208, 0.21);
+
+}
