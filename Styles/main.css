@@ -89,6 +89,7 @@ a{
   line-height: 1;
   align-items: center;
   border-radius: 16px;
+  border: 0;
 }
 
 
@@ -97,15 +98,26 @@ a{
 }
 
 .btn__secondary{
-
   background-color: transparent;
   border: solid 1px var(--color-primary);
   color: var(--color-primary);
 }
 
+.btn--dark{
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
 .btn--large{
   height: 64px;
   padding: 0 48px;
+}
+
+.hide-text{
+  clip-path: circle(0);
+  width: 0;
+  display: inline-block;
+  height: 0;
 }
 
 h2.section__title{
@@ -618,4 +630,65 @@ left: 16px;
 .news__content{
   text-align: center;
   margin-bottom: 80px;
+}
+
+.footer{
+  background-color: #2B2B39;
+  color: #e7e7e7;
+}
+
+.footer h3{
+color: var(--color-white);  
+font-size: 20px;
+margin-bottom: 24px;
+}
+
+.footer__nav{
+display: flex;
+justify-content: space-between;
+
+}
+
+.footer__nav ul{
+margin:0;
+padding: 0;
+list-style: none; 
+}
+
+.footer__nav li:not(:last-child){
+  margin-bottom: 24px;
+}
+
+.footer__nav a{
+color: #e7e7e7;
+}
+
+.footer__main{
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 120px;
+  padding: 80px 0;
+}
+
+.footer_signup h3{
+  max-width: 200px;
+}
+
+.footer_signup-form {
+  border: solid 1px var(--color-white);
+  border-radius: 16px;
+  display: flex;
+  margin-top: 32px;
+}
+
+.footer_signup-form .btn{
+padding: 0 24px;
+flex-shrink: 0;
+flex-grow: 0;
+}
+
+.footer_signup-form input {
+  all:unset;
+  flex-grow: 1;
+  padding: 0 24px;
 }

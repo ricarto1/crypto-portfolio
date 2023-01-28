@@ -19,7 +19,7 @@
                     width = "145"
                     height = "35"
                     />
-                        <nav class="header__nav">
+                        <nav aria-label="primary" class="header__nav">
                             <ul>
                                 <li><a href="#" class="active">Home</a></li>
                                 <li><a href="">Community</a></li>
@@ -303,6 +303,63 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <nav aria-label="secondary" class="footer__nav">
+                        <div>
+                            <h3>Home</h3>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Comunnity</a></li>
+                                    <li><a href="">Events</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                        </div>             
+                        
+                        <div>
+                            <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Guides</a></li>
+                                    <li><a href="">Help Center</a></li>
+                                </ul>
+                        </div>                   
+
+                        <div>
+                            <h3>Comunnity</h3>
+                                <ul>
+                                    <li><a href="">Newsfeed</a></li>
+                                    <li><a href="">Profile</a></li>
+                                    <li><a href="">Friends</a></li>
+                                    <li><a href="">Forums</a></li>
+                                </ul>
+                        </div>                   
+
+                        <div>
+                            <h3>Main links</h3>
+                                <ul>
+                                    <li><a href="">Members</a></li>
+                                    <li><a href="">Activity</a></li>
+                                    <li><a href="">Groups</a></li>
+                                    <li><a href="">Private Group</a></li>
+                                </ul>
+                        </div>                   
+                    </nav>
+
+                    <article class="footer_signup" >
+                        <h3>Subscribe Circle Newsletter</h3>
+                        <p>Subscribe to be the first one to know about updates. Enter your email</p>
+
+                        <form class="footer_signup-form" action="">
+                            <label class="hide-text" for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Email Address" />
+                            <button type="submit" class="btn btn--dark" >Subscribe</button>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
